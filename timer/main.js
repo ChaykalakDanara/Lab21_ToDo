@@ -42,5 +42,14 @@ function stopTimer() {
     timerInterval = null;
 }
 
+function resetTimer() {
+    stopTimer();
+    hours = 0;
+    minutes = 0;
+    seconds = 0;
+    updateDisplay();
+}
+
 startBtn.addEventListener("click", startTimer);
 stopBtn.addEventListener("click", stopTimer);
+resetBtn.addEventListener("click", resetTimer);
